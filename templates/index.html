@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Stream</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #video-container {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin: auto;
+            border: 2px solid #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #000;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        #video-container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Detector de emociones</h1>
+    <div id="video-container">
+        <img src="/video" />
+    </div>
+</body>
+</html>
